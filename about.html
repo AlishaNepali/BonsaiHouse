@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai House-Ecommerce Website</title>
+    <!-- google font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- google font family -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- js link used in our team section-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- js link -->
+
+
+<style>
+        .heading{
+        position: absolute; /* Position an element based on its closest positioned ancestor position. */
+        color:#d4dfe3 ;
+        top: 30%;
+        margin: 78px;
+        }
+
+        body{
+            background: #CCFFCC; 
+            font: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* meet our team css */
+        .team-section{
+          
+           width:85%;
+           margin: 40px auto;
+        }
+        
+       .meet{
+           display: flex;
+           margin-top: 22px;
+           height: 360px;            
+       }
+       .team-btn{
+           flex-basis: 30%;
+           display: block;  /* displays the content in block-level */
+           background-color: rgb(255, 255, 255);
+           padding: 30px;
+          
+       }
+       .team-btn a{
+           display: block;
+           text-decoration: none;
+           text-align: center;
+           font-size: 18px;
+           border: none;
+           color: black;
+           padding: 20px 28px;
+           border-bottom: solid black 1px;
+
+       }
+       .team-btn a.selected{
+         
+       color:rgb(119, 98, 98);
+       }
+       .describe{
+           flex-basis: 70%;
+           padding: 30px;
+           background-color: rgba(32, 124, 117, 0.829);
+       }
+      
+       .desection{
+           display: flex;
+           margin: auto;
+           font-size: 20px;
+           color: white;
+           text-align: justify ;
+           height: 0;
+           overflow: hidden;
+       }
+       .left{
+           flex-basis: 30%;
+       
+       }
+       .right{
+           flex-basis: 70%;
+       }
+
+       .desection:target{
+           height: auto;
+       }
+       .name{
+           display: block;
+           text-align: center;
+           text-transform: uppercase;
+           font-size: 28px;
+       }
+       .design{
+           display: block;
+           margin-bottom: 22px;
+           text-align: center;
+           font-size: 20px;
+       }
+       .left img{
+           height: 180px;
+           width: 218px;
+       }
+       /* end of meet our team css  */
+
+
+
+       /* start of css used in Contact Us section */
+        .container{
+            width: 85%;
+            margin: 40px auto;
+        }
+        .contact-box{
+            display: flex;
+            background: #fff;
+            margin-top: 20px;
+            
+        }
+        .contact-left{
+            flex-basis: 60%;
+            padding: 40px 60px;
+
+        }
+        .contact-right{
+            flex-basis: 40%;
+            padding: 40px;
+            background: #00b561;
+            color: white;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+        .container p{
+            margin-bottom: 10px;
+        }
+        .input-row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .input-row .input-group{
+            flex-basis: 45%;
+
+        }
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+        }
+
+        textarea{
+            width: 100%;
+            border: 1px solid #CCC;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+
+        }
+        label{
+            margin-bottom: 6px;
+            display: block;
+            color: #0d884f;;
+        }
+        #buttons{
+            background-color:  #0d884f;
+            width: 100px;
+            border: none;
+            outline: none;
+            color: #CCC;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 15px 0px rgba(17, 122, 23, 0.3);
+            
+        }
+
+        .contact-left h3{
+            color: #0d884f;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .contact-right h3{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        tr td:first-child{
+            padding-right: 20px;
+
+        }
+        tr td{
+            padding-top: 20px;
+        }
+        /* end of css used in Contact Us section */
+
+
+
+        /* start of css used in Location section */
+        .shop{
+            width: 85%;
+            margin: 40px auto;
+            padding-bottom: 45px;
+        }
+        .location{
+            display: flex;
+            background: #fff;
+            margin-top: 40px;
+            
+        }
+        .left-l{
+          flex-basis: 35%;
+          padding: 40px 60px;
+          
+          background:#8febcb ;
+          color: black;
+        }
+        .right-l{
+          flex-basis: 65%;
+          padding: 6px;
+           
+        }
+        /* end of css used in Location section */
+
+
+        /* footer css */
+        .foo li{
+          transition: transform .1.5s;
+        }
+        .foo li:hover {
+          -ms-transform: scale(2); /* IE 9 */
+          -webkit-transform: scale(2); /* Safari 3-8 */
+          transform: scale(2); 
+        }  
+        /* footer css */
+  
+        
+</style>   
+</head>
+<body>
+    <!-- nav bar section -->
+    <div class="logo">
+        <a href="index.html"><img src="images/1.png" width="230px" style="padding-left: 3%;"></a>
+    </div>
+     <nav>
+         <ul style="padding-left:39%">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="about.html">About Us</a></li>
+          </ul>
+     </nav>
+     <!-- end nav bar -->
+
+
+     <!-- banner -->
+    <div style="position:relative; top:0;">
+          <img class="img-responsive" src="images/11.png" alt=""  width="100%" />
+              <div class="heading">
+                    <h1 style="font-size: 48px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">ABOUT US</h1>
+                      <p style="font-size: 18px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Find out more about our STORE and TEAM.</p>
+              </div>
+    </div>
+    <!-- end of banner -->
+
+
+    <!-- top button -->
+    <button onclick="topFunction()" id="Move" title="Go to top">Top</button>
+
+
+    <!-- Member portfolio -->
+<div class="team-section">
+        <h1 style="padding: 32px 0px 12px 0px; border-bottom: 1px solid #eee;">Meet Our Team</h1>
+   <div class="meet">
+        <div class="team-btn">
+            <a href="#pic1">ALISHA NEPALI</a>
+            <a href="#pic2">PRIYA THAPA</a>
+            <a href="#pic3">KRITIKA GURUNG</a>
+            <a href="#pic4">ISHIKA GURUNG</a>
+        </div>
+
+
+        <div class="describe">
+        <div class="desection" id="pic1">
+            <div class="left">
+                <img src="images/aak.jpg" alt="">
+                <span class="name">ALISHA Nepali</span>
+                <span class="design">Freestyle Bonsai Artist</span>          
+            </div>
+            <div class="right">
+                <p style="padding: 0px 0px 0px 28px; font-size: 17px;"> I have studied in Malaysia and China over the last 3 years. I specialise in Yamadori and creating trees that inspire using Freestyle Techniques.I have studied under the inspirational International Malaysian bonsai Teacher Wyn Lee (The Founder of "Freestyle" technique) as part of the Black Scissors movement coined by Robert Stevens (Indonesia).</p>
+
+            </div>
+           
+        </div>
+
+        <div class="desection" id="pic2">
+            <div class="left">
+                <img src="images/p1.jpg" alt="">
+                <span class="name">Priya Thapa</span>
+                <span class="design">Product Manager</span>          
+          </div>
+            <div class="right">
+                <p style="padding: 0px 0px 0px 28px; font-size: 17px;">Priya runs our online business and has even dabbled in bonsai herself. She makes a mean coffee on bonsai days at the house. Qualification: Bachelor’s degree in Marketing, Experience: 3+ years of experience in product management. She Possess a higher level of enthusiasm to enhance skills and experience among junior team members.</p>
+
+            </div>   
+        </div>    
+
+        <div class="desection" id="pic3">
+            <div class="left">
+                <img src="images/kri.jpg" alt="">
+                <span class="name">kriti gurung</span>
+                <span class="design">Nursery Manager</span>           
+            </div>
+            <div class="right">
+                <p style="padding: 0px 0px 0px 28px; font-size: 17px;"> She Oversees and improves the daily functions of the nursery and responsible for opening the nursery in the morning and closing at the end of the business day.Shes has Bachelor’s degree in agricultural studies, horticulture, or a similar field and 3+ Years’ experience working as a nursery manager.</p>
+
+            </div>
+        </div>
+
+        <div class="desection" id="pic4">
+            <div class="left">
+                <img src="images/ishi.jpg" alt="">
+                <span class="name">ishika gurung</span>
+                <span class="design"> Founder</span>           
+            </div>
+            <div class="right">
+                <p style="padding: 0px 0px 0px 28px; font-size: 17px;"> Ishika has a bachelor’s degree in a field such as business, finance or marketing.She has experience of 5 years working experience as Manging director of BonsaiNursery. She is organized and have the ability to lead their teams and inspire them to work hard. She develops the company’s vision and strategy</p>
+
+            </div>   
+        </div>
+        </div>
+
+   </div>
+</div>
+    <!-- end of member portfolio -->
+
+    <!-- Contact us -->
+   <div class="container">
+          <h1 style="padding: 32px 0px 12px 0px; border-bottom: 1px solid #eee;">Connect With Us</h1>
+          <p>We would love to answer your queries and feedbacks. <br> Feel free to get in touch with us. </p>
+        <div class="contact-box">
+            <!-- Feedback form -->
+            <div class="contact-left">
+                  <h3>Feedback Form</h3>
+                <form id="myForm" onsubmit="return validateForm()" method="post">
+                   <div class="input-row">
+                       <div class="input-group">
+                         <label>Full Name: </label>
+                         <input type="text" id="name" placeholder="abc" required>
+                       </div>
+                        <div class="input-group">
+                         <label>Phone Number: </label>
+                         <input type="number" placeholder="9807537978" id="phnnumber">
+                       </div>
+                   </div>     
+                   <div class="input-row">
+                       <div class="input-group">
+                           <label>Email: </label>
+                           <input type="text" placeholder="abc@gamil.com" id="email" required>
+                       </div>
+                       <div class="input-group">
+                          <label>Address </label>
+                           <input type="text" placeholder="Pokhara 16, Batulechour" id="address">                   
+                       </div>
+                   </div>
+  
+                     <label for="">Message</label>
+                     <textarea rows="5" placeholder="Your Message" id="message" required></textarea>
+                     <button id="buttons" style="cursor: pointer;" onclick="myFunction()" type="submit">SEND</button>
+                  
+               </form>
+           </div>
+           <!--end of feedback form  -->
+                      
+              <!-- contact details -->
+                <div class="contact-right">
+                      <h3>Contact Us</h3>
+                      <table>
+                          <tr>
+                              <td>Email :</td>
+                              <td>bonsaiHouse16@gmail.com</td>
+                          </tr>
+                          <tr>
+                              <td>Phone :</td>
+                              <td>9806617089</td>
+                          </tr>
+                          <tr>
+                              <td>Address :</td>
+                              <td>Batulechour-16 Pokhara</td>
+                          </tr>
+                      </table>
+               </div>
+        </div>
+        
+   </div>
+   <!-- end of contact us -->
+
+    <!-- about shop -->
+  <div class="shop">
+        <h1 style="padding: 32px 0px 12px 0px; border-bottom: 1px solid #eee;">Our Location on Maps</h1>
+        
+        <div class="location">
+               <div class="left-l">
+                 <h3 style="padding-bottom: 12px;">About our Shop</h3>
+                 <p> Bonsai House is the long established store that sells the fresh bonsai plants straight from our own nursery.Here, you can find all types of the bonsai plants such as indoor and outdoor plants provided by the our own nursery.<br> Feel free to call our office from 8:30am-5:00pm, Pacific Time, with any questions. The nice thing about working with a smaller company is that we're available and enjoy speaking with you. We ship worldwide too.</p>
+
+                </div>
+          <div class="right-l">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.4237102547655!2d83.97840093927518!3d28.271218486884912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399593b5c7962b51%3A0xc6d8698553e67179!2sBonsai%20House!5e0!3m2!1sen!2snp!4v1674279873267!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+       </div>
+
+  </div>
+    <!-- End of about shop -->
+      
+<!-- footer -->
+<footer style="position: absolute; width: 100%; background-color: #323232; color: #D3D3D3; text-align: center; font-size: 18px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;">
+  <h3 style="font-size: 32px;">CONTACT US</h3>
+  <span>Address: Pokhara 16 - Batulechour, Nepal</span>
+        <p>(+061 441108)</p>
+      <ul class="foo" style="font-size: 14px; padding: 5px 0px 0px 280px; ">
+          <li> <a href="https://www.facebook.com/"><img src="icon/facebook.png"></a></li>
+          <li> <a href="https://twitter.com/"><img src="icon/Twitter.png"></a></li>
+          <li> <a href="https://www.linkedin.com/"><img src="icon/linkedin.png"></a></li>
+          <li> <a href="https://www.instagram.com/"><img src="icon/instagram.png"></a></li>
+      </ul>
+</footer>
+<!-- footer ends-->
+
+<script>
+// js for top button
+// Get the button
+let mybutton = document.getElementById("Move");
+                  
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};        
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+} 
+}
+                  
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+// end of js for top button
+
+
+
+// js for targetting selected team member
+$('a').on('click', function(){
+    $('a').removeClass('selected');
+    $(this).addClass('selected');
+});
+// end of js for targetting selected team member
+
+
+
+// form validation for feedback form
+function validateForm(){
+  var name = document.getElementById("name").value;
+  var phnnumber = document.getElementById("phnnumber").value;
+  var email = document.getElementById("email").value;
+  var address = document.getElementById("address").value;
+  var message = document.getElementById("message").value;
+  
+  
+  var text;
+  if(name.length < 5){
+    alert("Please Enter your Full Name!");
+    return false;
+  }
+  var number;
+  if(isNaN(phnnumber) || phnnumber.length != 10){
+    alert("Please Enter valid Phone Number");
+    return false;
+  }
+  var text;
+  if(address.length < 4){
+    alert("Please Enter your correct Address!");
+
+    return false;
+  }
+  if(email.indexOf("@") == -1 || email.length < 6){
+    alert("Please Enter valid Email");
+        return false;
+  }
+  if(message.length <= 30){
+    alert("Please Describe your Message in more detail");
+    return false;
+  }
+ 
+  alert("Form Submitted Successfully!");
+  return true;
+}
+// end of form validation
+
+</script>
+</body>
+</html>                       

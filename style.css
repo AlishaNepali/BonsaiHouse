@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+/* move to top button css */
+#Move {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(56, 90, 5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#Move:hover {
+  background-color: #555;
+}
+/* end of button */
+/* nav bar css */
+.logo img{
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 10px;
+
+}
+
+ul{
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+    top: 0%;
+    left: 20%;
+}
+
+nav{
+    width: 100%;
+    overflow: auto;
+    background: rgb(255, 255, 255);
+}
+
+ul li{
+   float: left;
+}
+
+ul li a{
+    width: 100px;
+    font-size: 17.5px;
+    display: block;
+    padding: 28px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(8, 109, 38);
+   
+    font-family: Arial;
+    text-align: center;
+ }
+
+ ul li a:hover{
+    color: #8B4000; 
+    
+    
+}
+
+/* end navv bar */
+
+   /* Slideshow container */
+.slideshow-container {
+  max-width: 1250px;
+  position: relative;
+   margin: auto;     
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 90px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 8px 12px;
+  position: absolute;
+  top: 8px;
+  margin-top: 120px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 11px;
+  width: 11px;
+  margin: 0px 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+/* about css */
+.sect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin:10px 50px 25px 50px;
+  background-color: #f8f1f1;
+  
+  
+  
+ }
+ 
+ .sect img {
+  max-width: 100%;
+  padding: 15px 15px 15px 35px ;
+ }
+
+.letters{
+  padding: 12px 25px;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+/* end about css */
+
+
+
+
+
+/* best seller and new arrival */
+.sellerTitle{
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(6, 95, 66) !important;
+      font-size:45px;  
+      letter-spacing:3px; 
+       margin-top:30px;
+}
+/* end  */
+/* recent blogs css */
+.article {
+  position: relative;
+  margin: 0px 10px 50px 80px;
+  float: left;
+  width: 28%;
+  padding: 30px;
+}
+
+.arts{
+  margin: 0px 10px 50px 170px !important;
+}
+.bloTitle{
+     margin-top:38px !important;
+    padding-top: 30px;
+}
+
+.article img {vertical-align:middle;}
+
+.article .thesis {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #ffffff;
+  width: 77.5%;
+  padding: 20px;
+  
+}
+
+.blo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.article img:hover {
+  opacity: 0.8;
+}
+/* end recent blogs */
+
+
+
